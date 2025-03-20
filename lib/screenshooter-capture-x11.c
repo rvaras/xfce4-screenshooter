@@ -615,7 +615,8 @@ static gboolean cb_draw (GtkWidget *widget,
             }
 
           /* Paint the rubber banding rectangles */
-          cairo_set_source_rgba (cr, 1.0f, 1.0f, 1.0f, 0.0f);
+          //cairo_set_source_rgba (cr, 1.0f, 1.0f, 1.0f, 0.0f);
+          cairo_set_source_rgba (cr, 0.255f, 0.215f, .0f, 0.5f);
           gdk_cairo_rectangle (cr, &intersect);
           cairo_fill (cr);
         }
